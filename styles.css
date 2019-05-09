@@ -46,11 +46,11 @@ img {
     grid-column: 2/3
 }
 
-}
+
 
 .about-content p {
     border-style: ridge;
-    border width: 4rem;
+    
 }
 
 form {
@@ -119,7 +119,7 @@ main {
 
 
 
-}
+
 
 /* about content */
 
@@ -142,7 +142,7 @@ figure {
 
 article {
     display: grid;
-    background width: 4rem
+   
 }
 
 /* form container */
@@ -200,7 +200,7 @@ footer {
     article,
     .form-container {
         grid-template-columns: 1fr 48ch 1fr;
-        border width: 4rem
+
     }
 
 
