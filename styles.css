@@ -65,7 +65,8 @@ form {
 }
 
 
-.story-body:first-letter {
+.story-body:first-letter,
+.blog-post:first-letter{
 
     float: left;
     font-size: 45px;
