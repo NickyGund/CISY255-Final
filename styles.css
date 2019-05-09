@@ -1,0 +1,241 @@
+body {
+
+    font-family: 'Sree Krushnadevaraya', serif;
+
+}
+
+.gallery-title,
+.story h1,
+.story h2,
+h1 {
+
+
+    font-family: 'Tangerine', cursive;
+    text-decoration: underline;
+    font-size: 2rem;
+
+
+
+}
+
+.page-title {
+    font-family: 'Tangerine', cursive;
+    text-decoration-color: white;
+    font-size: 3rem;
+}
+
+legend {
+    font-family: monospace;
+}
+
+input:focus {
+    background-color: cornflowerblue;
+}
+
+textarea:focus {
+    background-color: cornflowerblue;
+}
+
+img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    grid-column: 2/3
+}
+
+}
+
+.about-content p {
+    border-style: ridge;
+    border width: 4rem;
+}
+
+form {
+    background-color: #D4E5FF;
+    border-width: 4rem;
+
+
+}
+
+.profile {
+    text-decoration: underline;
+}
+
+
+.story-body:first-letter {
+
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+    font-family: cursive;
+    color: cornflowerblue;
+
+}
+
+.submit {
+
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s;
+    /* Green */
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.submit:hover {
+    background-color: white;
+    /* Green */
+    color: cornflowerblue;
+}
+
+
+
+
+/*  grids */
+
+main {
+    display: grid;
+}
+
+/* hero content */
+
+.content {
+    display: grid;
+
+}
+
+
+
+
+}
+
+/* about content */
+
+.about-content {
+    display: grid;
+
+}
+
+/*  gallery */
+
+.gallery {
+    display: grid;
+}
+
+figure {
+    display: grid;
+}
+
+/*  article */
+
+article {
+    display: grid;
+    background width: 4rem
+}
+
+/* form container */
+.form-container {
+    display: grid;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+}
+
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+    .mobile-first {
+        display: none;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .content picture,
+    .content p,
+    .about-content {
+        grid-column: 2/3;
+    }
+
+
+    /*	about content */
+
+    /*	gallery */
+
+    figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    figcaption {
+        margin-left: 1rem;
+    }
+
+
+    /*	article */
+
+    article,
+    .form-container {
+        grid-template-columns: 1fr 48ch 1fr;
+        border width: 4rem
+    }
+
+
+    /*	form */
+
+    .story h1,
+    .story h2,
+    .story .story-body,
+    form,
+    .blogpost h1,
+    .blog-post{
+        grid-column: 2/3;
+
+
+    }
+   
+}
+
+
+
+    /* wide screen layout >=64rem (1024px) */
+    @media screen and (min-width: 64rem) {
+
+
+        .gallery {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .gallery h1 {
+            grid-column: 2/4;
+        }
+
+        figure {
+            grid-template-columns: auto;
+        }
+        
+        
+    }
